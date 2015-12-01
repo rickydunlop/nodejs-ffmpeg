@@ -1,4 +1,4 @@
-FROM buildpack-deps:vivid
+FROM buildpack-deps:wily
 
 # NodeJS
 RUN set -ex \
