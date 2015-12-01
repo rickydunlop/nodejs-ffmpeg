@@ -1,2 +1,3 @@
-# nodejs-ffmpeg
-Dockerfile for NodeJS and FFmpeg on ubuntu vivid
+A base container with NodeJS and FFmpeg installed.
+
+Extends ubuntu vivid (15.04)
