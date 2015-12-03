@@ -2,11 +2,11 @@ FROM rickydunlop/nodejs-ffmpeg
 
 RUN mkdir -p /usr/src/app
 
-COPY package.json /usr/src/package.json
-WORKDIR /usr/src
-RUN npm install
+ONBUILD COPY package.json /usr/src/package.json
+ONBUILD WORKDIR /usr/src
+ONBUILD RUN npm install
 
-WORKDIR /usr/src/app
+ONBUILD WORKDIR /usr/src/app
 
 EXPOSE 3000
 
