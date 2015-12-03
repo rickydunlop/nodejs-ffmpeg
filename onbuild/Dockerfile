@@ -1,9 +1,8 @@
 FROM rickydunlop/nodejs-ffmpeg
 
 RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
 
-COPY ./package.json /usr/src/
+COPY package.json /usr/src/package.json
 WORKDIR /usr/src
 RUN npm install
 
