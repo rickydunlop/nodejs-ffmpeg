@@ -8,6 +8,7 @@ ONBUILD WORKDIR /usr/src
 ONBUILD RUN npm install
 
 ONBUILD WORKDIR /usr/src/app
+ONBUILD COPY . /usr/src/app
 
 EXPOSE 3000
 
