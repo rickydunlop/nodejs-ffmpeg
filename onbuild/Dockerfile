@@ -1,6 +1,7 @@
 FROM rickydunlop/nodejs-ffmpeg
 
 RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
 ONBUILD COPY package.json /usr/src/package.json
 ONBUILD WORKDIR /usr/src
