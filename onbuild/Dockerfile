@@ -3,12 +3,10 @@ FROM rickydunlop/nodejs-ffmpeg
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-ONBUILD COPY package.json /usr/src/package.json
-ONBUILD WORKDIR /usr/src
+ONBUILD ARG NODE_ENV
+ONBUILD ENV NODE_ENV $NODE_ENV
+ONBUILD COPY package.json /usr/src/app/
 ONBUILD RUN npm install
+ONBUILD COPY . /usr/src/app
 
-ONBUILD WORKDIR /usr/src/app
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
+CMD [ "npm", "start" ]
