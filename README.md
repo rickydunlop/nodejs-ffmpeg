@@ -1,3 +1,1 @@
-A base container with NodeJS and FFmpeg installed.
-
-Extends ubuntu vivid (15.04)
+An Alpine linux base container with NodeJS and FFmpeg installed.
