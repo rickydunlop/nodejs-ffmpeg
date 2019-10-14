@@ -3,7 +3,7 @@
 
 # Alpine Linux NodeJS with FFmpeg
 
-This Dockerfile is based on [Node Alpine 8](https://hub.docker.com/_/node/) with FFmpeg installed.
+This Dockerfile is based on [Node Alpine 12](https://hub.docker.com/_/node/) with FFmpeg installed.
 
 
 ## Build
