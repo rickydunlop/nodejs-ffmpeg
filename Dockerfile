@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:12-alpine
 MAINTAINER Ricky Dunlop <hello@rickydunlop.co.uk>
 
 ENV FFMPEG_VERSION=3.3.5
